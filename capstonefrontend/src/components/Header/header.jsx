@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import './header.css';
 
 class Header extends Component {
     state = { 
@@ -13,14 +14,14 @@ class Header extends Component {
                 </div>
 
                 <div className='HeaderSearch'>
-                    <form>
-                        <input type="text" name="searchbar" className='SearchBar' />
+                    <form className='HeaderSearchForm'>
+                        <input type="text" name="searchbar" className='SearchBar' placeholder="Search" />
                     </form>
                 </div>
 
                 <div className='HeaderAccount'>
                     <h1>Account</h1>
-                    
+
                 </div>
             </div>
          );

@@ -1,0 +1,44 @@
+.HeaderWrapper{
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 6vh;
+    grid-template-areas:
+    'logo search account';
+    height: 6vh;
+    width: 100vw;
+}
+
+.HeaderLogo{
+    display: grid;
+    grid-area: logo;
+    background-color: rgb(238, 176, 146);
+    margin: 0%;
+    padding: 0%;
+    place-content: center;
+}
+
+.HeaderSearch{
+    display: grid;
+    grid-area: search;
+    background-color: rgba(238, 177, 146, 0.678);
+    place-content: center;
+}
+
+.HeaderAccount{
+    display: grid;
+    grid-area: account;
+    background-color: rgb(238, 176, 146);
+    place-content: center;
+}
+
+.HeaderSearchForm{
+    display: grid;
+    width: 80vw;
+    place-content: center;
+}
+.SearchBar{
+    display: grid;
+    width: 60vw;
+    height: 2.7vh;
+    
+}
