@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import Header from './Header/header';
 
 class App extends Component {
     state = { }
     render() {
         return (
-            <h1>pickle</h1>
+            <div className="MainWrapper">
+                <div>
+                    <Header/>
+                </div>
+
+            </div>
         );
     }
 }
