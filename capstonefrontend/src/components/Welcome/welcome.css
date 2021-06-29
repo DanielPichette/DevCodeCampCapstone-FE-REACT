@@ -2,7 +2,7 @@
     background-image:url(https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-position: center;
     background-size:cover;
-    height: 65vh;
+    height: 60vh;
     display: grid;
     place-content: center;
 }

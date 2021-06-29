@@ -1,0 +1,29 @@
+.SearchByAnimalHeader{
+    display: grid;
+    place-content: center;
+    background-color: rgb(226, 226, 226);
+}
+
+.MainWrapper{
+    display: grid;
+    place-content: center;
+}
+.SearchByAnimalHeader h2{
+    margin: 0%;
+}
+
+.AnimalCircleWrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.CircleSection{
+    display: grid;
+    background-color: rgb(226, 226, 226);
+    place-content: center;
+    height: 18vw;
+}
+.CircleImage{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+}

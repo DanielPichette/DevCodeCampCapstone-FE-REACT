@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './app.css'
-import Header from './Header/header';
-import Navigation from './NavigationBar/navigation';
-import Welcome from './Welcome/welcome';
+import Home from './Home/home';
+// import Navigation from './NavigationBar/navigation';
+// import Welcome from './Welcome/welcome';
+// import HomeBrowse from './HomeBrowse/homeBrowse';
 
 class App extends Component {
     state = { }
@@ -10,15 +11,8 @@ class App extends Component {
         return (
             <div className="MainWrapper">
 
-                <div>
-                    <Header/>
-                </div>
-                <div>
-                    <Navigation/>
-                </div>
-                <div>
-                    <Welcome/>
-                </div>
+                <Home/>
+                
 
             </div>
         );
