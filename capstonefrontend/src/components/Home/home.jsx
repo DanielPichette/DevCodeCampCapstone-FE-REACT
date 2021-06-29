@@ -22,10 +22,12 @@ class Home extends Component {
                 <div>
                     <Welcome/>
                 </div>
+                <br/>
 
                 <div>
                     <HomeBrowse/>
                 </div>
+                <br/>
 
                 <div className="SearchByAnimalHeader">
                     <h2>Search by Animal</h2>
@@ -72,6 +74,31 @@ class Home extends Component {
                         </div>
                         <h3>Fish</h3>
                     </div>
+                </div>
+                <br/>
+                <div className="CatBar">
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+
+                </div>
+                <br/>
+                <div className="DogBar">
+                    <div className="DogBarListing">
+                        <div className="DogBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+
+                </div>
+                <br/>
+                <div className="ItemBar">
+                    <div className="ItemBarListing">
+                        <div className="ItemBarListingImage">IMG</div>
+                        <div className="ItemBarListingName">Name</div>
+                    </div>
+
+
                 </div>
 
             </div>

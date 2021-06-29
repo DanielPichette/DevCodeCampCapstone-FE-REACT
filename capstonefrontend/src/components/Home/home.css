@@ -21,9 +21,38 @@
     background-color: rgb(226, 226, 226);
     place-content: center;
     height: 18vw;
+    
 }
 .CircleImage{
     width: 14vw;
     height: 14vw;
     background-color: white;
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+.CatBar, .ItemBar, .DogBar{
+    display: flex;
+    width: 100vw;
+    height: 23vh;
+    background-color: whitesmoke;
+}
+
+.CatBarListing, .DogBarListing, .ItemBarListing{
+    display: grid;
+    background-color: yellow;
+    place-content: center;
+}
+
+.CatBarListingImage, .DogBarListingImage, .ItemBarListingImage{
+    display: grid;
+    height: 19vh;
+    width: 19vh;
+    background-color: rgb(206, 206, 206);
+    place-content: center;
+}
+
+.CatBarListingName,.DogBarListingName,.ItemBarListingName{
+    display: grid;
+    place-content: center;
 }
