@@ -81,6 +81,66 @@ class Home extends Component {
                         <div className="CatBarListingImage">IMG</div>
                         <div className="CatBarListingName">Name</div>
                     </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
 
                 </div>
                 <br/>
