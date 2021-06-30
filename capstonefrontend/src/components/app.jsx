@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './app.css'
 import Home from './Home/home';
-// import Navigation from './NavigationBar/navigation';
-// import Welcome from './Welcome/welcome';
+import Register from './Register/register';
+import Navigation from './NavigationBar/navigation';
+import Header from './Header/header';
+//import Welcome from './Welcome/welcome';
 // import HomeBrowse from './HomeBrowse/homeBrowse';
 
 class App extends Component {
@@ -10,8 +12,15 @@ class App extends Component {
     render() {
         return (
             <div className="MainWrapper">
-
-                <Home/>
+            
+            <div>
+                    <Header/>
+            </div>
+            <div>
+                    <Navigation/>
+            </div>
+                {/* <Home/> */}
+                <Register/>
                 
 
             </div>
