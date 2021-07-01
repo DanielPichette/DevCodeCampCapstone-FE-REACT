@@ -4,6 +4,7 @@ import Home from './Home/home';
 import Register from './Register/register';
 import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
+import Login from './Login/login';
 //import Welcome from './Welcome/welcome';
 // import HomeBrowse from './HomeBrowse/homeBrowse';
 
@@ -20,7 +21,8 @@ class App extends Component {
                     <Navigation/>
             </div>
                 {/* <Home/> */}
-                <Register/>
+                {/* <Register/> */}
+                <Login/>
                 
 
             </div>
