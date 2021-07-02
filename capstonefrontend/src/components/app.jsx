@@ -5,6 +5,7 @@ import Register from './Register/register';
 import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
 import Login from './Login/login';
+import SearchView from './SearchView/searchview';
 //import Welcome from './Welcome/welcome';
 // import HomeBrowse from './HomeBrowse/homeBrowse';
 
@@ -22,7 +23,8 @@ class App extends Component {
             </div>
                 {/* <Home/> */}
                 {/* <Register/> */}
-                <Login/>
+                {/* <Login/> */}
+                <SearchView/>
                 
 
             </div>
