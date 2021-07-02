@@ -1,7 +1,40 @@
 .SearchViewContainer{
-    background-color: rgb(31, 81, 85);
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.searchBoxes{
-    background-color: honeydew;
+ .PetResults, .ItemResults{
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    min-height: 180px;
+
+}
+
+.SearchListing{
+    height: 20vh;
+    max-height: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    min-width: 160px;
+    background-color: rgb(74, 74, 74);
+    color: white
+}
+
+.SearchListingImage{
+    display: grid;
+    height: 160px;
+    max-height: 160px;
+    max-width: 180px;
+    min-width: 160px;
+    width: 19vh;
+    background-color: rgb(28, 36, 46);
+    color: white;
+    place-content: center;
+}
+
+.SearchListingName{
+    display: grid;
+    place-content: center;
 }

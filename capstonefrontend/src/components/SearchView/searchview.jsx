@@ -14,13 +14,21 @@ class SearchView extends Component {
     render() {
         return (        
             <div className="SearchViewContainer">
-                <h3>Results matching "  "</h3>
-                <div className="searchBoxes">
-                    <div className="PetResaults">
-                        <h4>PETS</h4>
+                <h3 style={{margin:"0px"}}>Results matching "  "</h3>
+                <h4 style={{margin:"0px"}}>Pets:</h4>
+
+                <div className="PetResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
                     </div>
-                    <div className="Item Resaults">
-                        <h4>Items</h4>
+                </div>
+
+                <h4 style={{margin:"0px"}}>Items:</h4>
+                <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
                     </div>
                 </div>
 
