@@ -15,17 +15,121 @@ class SearchView extends Component {
         return (        
             <div className="SearchViewContainer">
                 <h3 style={{margin:"0px"}}>Results matching "  "</h3>
-                <h4 style={{margin:"0px"}}>Pets:</h4>
+                <h2 style={{margin:"0px"}}>Pets:</h2>
 
                 <div className="PetResults">
                     <div className="SearchListing">
                          <div className="SearchListingImage">IMG</div>
                         <div className="SearchListingName">Name</div>
                     </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    
                 </div>
 
-                <h4 style={{margin:"0px"}}>Items:</h4>
+                <h2 style={{margin:"0px"}}>Items:</h2>
                 <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div> <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
                     <div className="SearchListing">
                          <div className="SearchListingImage">IMG</div>
                         <div className="SearchListingName">Name</div>
