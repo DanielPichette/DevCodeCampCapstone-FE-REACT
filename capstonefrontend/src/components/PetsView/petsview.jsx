@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './searchview.css';
+import './petsview.css';
 //import axios from 'axios';
 
-class SearchView extends Component {
+class PetView extends Component {
     constructor(props) {
         super(props);
             this.state = {
@@ -15,8 +15,8 @@ class SearchView extends Component {
         return (        
             <div className="SearchViewContainer">
                 <h3 style={{margin:"0px"}}>Results matching "  "</h3>
-                <h4 style={{margin:"0px"}}>Pets:</h4>
-
+                
+                <h4 style={{margin:"0px"}}>Cats:</h4>
                 <div className="PetResults">
                     <div className="SearchListing">
                          <div className="SearchListingImage">IMG</div>
@@ -24,7 +24,35 @@ class SearchView extends Component {
                     </div>
                 </div>
 
-                <h4 style={{margin:"0px"}}>Items:</h4>
+                <h4 style={{margin:"0px"}}>Dogs:</h4>
+                <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                </div>
+                <h4 style={{margin:"0px"}}>Reptiles:</h4>
+                <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                </div>
+                <h4 style={{margin:"0px"}}>Small Animals:</h4>
+                <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                </div>
+                <h4 style={{margin:"0px"}}>Birds:</h4>
+                <div className="ItemResults">
+                    <div className="SearchListing">
+                         <div className="SearchListingImage">IMG</div>
+                        <div className="SearchListingName">Name</div>
+                    </div>
+                </div>
+                <h4 style={{margin:"0px"}}>Fish:</h4>
                 <div className="ItemResults">
                     <div className="SearchListing">
                          <div className="SearchListingImage">IMG</div>
@@ -38,4 +66,4 @@ class SearchView extends Component {
     }
 }
 
-export default SearchView;
+export default PetView;
