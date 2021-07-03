@@ -7,6 +7,7 @@ import Header from './Header/header';
 import Login from './Login/login';
 import PetView from './PetsView/petsview';
 import SearchView from './SearchView/searchview';
+import ProfileView from './ProfileView/profile';
 //import Welcome from './Welcome/welcome';
 // import HomeBrowse from './HomeBrowse/homeBrowse';
 
@@ -26,7 +27,8 @@ class App extends Component {
                 {/* <Register/> */}
                 {/* <Login/> */}
                 {/* <SearchView/> */}
-                <PetView/>
+                {/* <PetView/> */}
+                <ProfileView/>
                 
 
             </div>
