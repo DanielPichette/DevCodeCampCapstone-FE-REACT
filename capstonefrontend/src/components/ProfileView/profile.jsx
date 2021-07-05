@@ -12,22 +12,97 @@ class ProfileView extends Component {
 
 
     render() {
-        return (        
+        return ( 
+            <div>
             <div className="ProfileContainer">
                <div className="ProfileImage">
-                   <img src="https://images.pexels.com/photos/4130428/pexels-photo-4130428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Happy Dog"/>
+                   <img src="https://images.pexels.com/photos/4218369/pexels-photo-4218369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Happy Dog"/>
                </div>
                <div className="ProfileInfo">
-                   <h2>Profile</h2>
+                   <h1>Account Summary</h1>
                    <p>UserName: </p>
                    <p> First Name:</p>
                    <p>Last Name:</p>
                    <p>Username:</p>
                    <p>Email:</p>
                    <p>City</p>
+                  
+                   <button>Update</button>
                </div>
-               <div className="ProfileListings">LISTINGS</div>
+               <div className="ProfileListings">
+               <h3>Your Listings:</h3>
+               <div className="CatBar">
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+
+                </div>
+                
+               </div>
+
             </div>
+        </div>
              
          );
     }
