@@ -1,0 +1,37 @@
+.ProfileContainer{
+    width: 80vw;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    place-content: center;
+    background-color: rgb(88, 101, 125);
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'img info'
+    'list list';
+}
+
+.ProfileImage{
+    display: grid;
+    grid-area: img;
+    background-color: white;
+
+}
+
+.ProfileImage img{
+    width: 50vw;
+}
+
+.ProfileInfo{
+    display: grid;
+    grid-area: info;
+    background-color: rgba(171, 171, 171, 0.16);
+    width: 30vw;
+}
+
+.ProfileListings{
+    display: grid;
+    grid-area: list;
+    background-color: rgba(169, 169, 169, 0.623);
+}

@@ -1,6 +1,6 @@
 .HomeBrowseBody{
     display: grid;
-    width: 100vw;
+    width: 90vw;
     justify-self: center;
     grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
     grid-template-rows: auto;
@@ -9,7 +9,7 @@
     grid-gap: 4px;
 }
 .HomeBrowseBody div{
-    height: 23.5vh;
+    height: 20vh;
     color: white;
 }
 .BrowsePet{
@@ -33,6 +33,8 @@
     grid-area: bitem;
     place-content: center;
     background-color: rgb(28, 38, 43);
+}
 
-
+.BrowsePet:hover{
+    background-color: darksalmon;
 }

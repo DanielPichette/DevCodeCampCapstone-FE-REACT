@@ -14,12 +14,7 @@ class Home extends Component {
             <div className="MainWrapper">
 
                 <div>
-                    <Header/>
-                </div>
-                <div>
-                    <Navigation/>
-                </div>
-                <div>
+                    <br/>
                     <Welcome/>
                 </div>
                 <br/>
