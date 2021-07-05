@@ -1,0 +1,42 @@
+.LostWrapper{
+    display: grid;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'header'
+    ' body';
+}
+
+.LostHeader{
+    display: grid;
+    grid-area: header;
+    place-content: center;
+}
+.LostBody{
+    display: grid;
+    grid-area: body;
+    place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.LostListing{
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom: 20px;
+}
+
+.LostImg{
+    display: grid;
+    height: 25vh;
+    width: 25vh;
+    background-color: pink;
+}
+
+.Listinginfo{
+    display: grid;
+    place-content: center;
+}

@@ -7,6 +7,7 @@ import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
 import Login from './Login/login';
 import PetView from './PetsView/petsview';
+import Lost from './LostPet/lostpets';
 import SearchView from './SearchView/searchview';
 import ProfileView from './ProfileView/profile';
 import {
@@ -82,6 +83,9 @@ class App extends Component {
                                 </Route>
                                 <Route path="/SearchResults" component={SearchView}>
                                     <SearchView/>
+                                </Route>
+                                <Route path="/Lost" component={Lost}>
+                                    <Lost/>
                                 </Route>
                             </Switch>
                 
