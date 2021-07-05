@@ -35,15 +35,20 @@
     
 }
 .CircleImage{
+    display: grid;
     width: 17vh;
     height: 17vh;
     background-color: white;
     clip-path: circle(50% at 50% 50%);
+    place-content: center;
+
 
 }
 .CircleImage:hover{
     box-shadow: 0 0 20px rgb(0, 0, 0);
-
+    display: grid;
+    place-content: center;
+background-image: linear-gradient(rgba(250, 128, 114, 0.399),rgba(39, 47, 75, 0.356));
 }
 
 .CatBar, .ItemBar, .DogBar{
@@ -82,3 +87,8 @@
     font-weight: bolder;
 
 }
+.CircleImage img{
+    width: 14vh;
+    height: 14vh;
+    display: grid;
+justify-self: center;}

@@ -47,3 +47,6 @@
 .ProfileInfo button{
     width: 100%;
 }
+.ProfileInfo img{
+    width: 20vh;
+}

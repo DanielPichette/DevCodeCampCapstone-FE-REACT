@@ -19,6 +19,7 @@ class ProfileView extends Component {
                    <img src="https://images.pexels.com/photos/4218369/pexels-photo-4218369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Happy Dog"/>
                </div>
                <div className="ProfileInfo">
+                   <img src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
                    <h1>Account Summary</h1>
                    <p>UserName: </p>
                    <p> First Name:</p>

@@ -12,6 +12,10 @@ class Header extends Component {
                 <div className='HeaderLogo'>
                     <h1>LeashLocal</h1>
                 </div>
+                <div className="HeaderIMG">
+                <img className="Logo" src="https://image.flaticon.com/icons/png/512/2934/2934951.png" alt=""/>
+
+                </div>
 
                 <div className='HeaderSearch'>
                     <form className='HeaderSearchForm'>
@@ -20,7 +24,9 @@ class Header extends Component {
                 </div>
 
                 <div className='HeaderAccount'>
+
                     <h1>Account</h1>
+                    <img src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="icon"/>
 
                 </div>
             </div>

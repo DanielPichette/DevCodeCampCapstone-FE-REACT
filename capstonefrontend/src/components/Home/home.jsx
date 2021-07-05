@@ -30,42 +30,42 @@ class Home extends Component {
                 <div className="AnimalCircleWrapper">
                     <div className="CircleSection">
                     <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/4867/4867184.png" alt=""/>
                         </div>
                         <h3>Cats</h3>
                     </div>
 
                     <div className="CircleSection">
                         <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/4867/4867176.png" alt=""/>
                         </div>
                         <h3>Dogs</h3>
                     </div>
 
                     <div className="CircleSection">
                     <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/836/836053.png" alt=""/>
                         </div>
                         <h3>Reptiles</h3>
                     </div>
 
                     <div className="CircleSection">
                     <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/836/836080.png" alt="" />
                         </div>
                         <h3>Small Animals</h3>
                     </div>
 
                     <div className="CircleSection">
                     <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/836/836062.png" alt=""/>
                         </div>
                         <h3>Birds</h3>
                     </div>
 
                     <div className="CircleSection">
                     <div className="CircleImage">
-                            img
+                            <img src="https://image.flaticon.com/icons/png/512/835/835757.png" alt=""/>
                         </div>
                         <h3>Fish</h3>
                     </div>

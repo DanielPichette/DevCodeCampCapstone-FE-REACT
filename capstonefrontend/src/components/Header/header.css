@@ -1,9 +1,9 @@
 .HeaderWrapper{
     display: grid;
-    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-columns: auto 15vw  65vw 15vw;
     grid-template-rows: 6vh;
     grid-template-areas:
-    'logo search account';
+    'img logo  search account';
     height: 6vh;
     width: 100vw;
     margin-bottom: 3px;
@@ -26,7 +26,7 @@
 }
 
 .HeaderAccount{
-    display: grid;
+    display: flex;
     grid-area: account;
     background-color: rgb(238, 176, 146);
     place-content: center;
@@ -43,4 +43,24 @@
     height: 2.7vh;
     color: rgb(53, 116, 158);
     
+}
+
+.HeaderAccount img{
+    height: 80%;
+    width: auto;
+    margin: auto;
+}
+
+.Logo{
+    display: grid;
+    height: 5vh;
+    width: auto;
+}
+.HeaderIMG{
+    display: grid;
+    grid-area: img;
+    background-color: rgb(238, 176, 146);
+    place-content: center;
+    
+
 }
