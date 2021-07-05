@@ -5,6 +5,7 @@ import Home from './Home/home';
 import Register from './Register/register';
 import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
+import UpdateProfile from './update Profile/updateprofile';
 import Login from './Login/login';
 import PetView from './PetsView/petsview';
 import Lost from './LostPet/lostpets';
@@ -86,6 +87,9 @@ class App extends Component {
                                 </Route>
                                 <Route path="/Lost" component={Lost}>
                                     <Lost/>
+                                </Route>
+                                <Route path="/UpdateProfile" component={UpdateProfile}>
+                                    <UpdateProfile/>
                                 </Route>
                             </Switch>
                 

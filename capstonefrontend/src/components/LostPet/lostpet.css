@@ -31,8 +31,8 @@
 
 .LostImg{
     display: grid;
-    height: 25vh;
-    width: 25vh;
+    height: 30vh;
+    width: 30vh;
     background-color: pink;
 }
 
@@ -40,3 +40,10 @@
     display: grid;
     place-content: center;
 }
+.Listinginfo h3{
+    margin: 0%;
+}
+.Listinginfo h4{
+    margin: 0%;
+}
+

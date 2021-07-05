@@ -23,51 +23,27 @@ class Lost extends Component {
                             IMG
                         </div>
                     
-                        <div className="Listinginfo">Name</div>
-                        <div className="Listinginfo">Description</div>
-                        <div className="Listinginfo">Last Seen:</div>
-                        <div className="Listinginfo">Contact:</div>
-                    </div>
-                    <div className="LostListing">
-                        <div className="LostImg">
-                            IMG
+                        <div className="Listinginfo">
+                            <h3>Name:</h3><br/>
+                            <h4>Name</h4>
                         </div>
-                    
-                        <div className="Listinginfo">Name</div>
-                        <div className="Listinginfo">Description</div>
-                        <div className="Listinginfo">Last Seen:</div>
-                        <div className="Listinginfo">Contact:</div>
-                    </div>
-                    <div className="LostListing">
-                        <div className="LostImg">
-                            IMG
+                        <div className="Listinginfo">
+                            <h3>Description:</h3><br/>
+                            <h4>Description</h4>
                         </div>
-                    
-                        <div className="Listinginfo">Name</div>
-                        <div className="Listinginfo">Description</div>
-                        <div className="Listinginfo">Last Seen:</div>
-                        <div className="Listinginfo">Contact:</div>
-                    </div>
-                    <div className="LostListing">
-                        <div className="LostImg">
-                            IMG
+                        <div className="Listinginfo">
+                            <h3>Date Last Seen:</h3><br/>
+                            <h4>Date</h4></div>
+                        <div className="Listinginfo">
+                            <h3>Contact:</h3><br/>
+                            <h4>
+                                Name: name <br/>
+                                Phone: xxx-xxx-xxxx <br/>
+                                Email: @gmail.com
+                            </h4>
                         </div>
-                    
-                        <div className="Listinginfo">Name</div>
-                        <div className="Listinginfo">Description</div>
-                        <div className="Listinginfo">Last Seen:</div>
-                        <div className="Listinginfo">Contact:</div>
                     </div>
-                    <div className="LostListing">
-                        <div className="LostImg">
-                            IMG
-                        </div>
                     
-                        <div className="Listinginfo">Name</div>
-                        <div className="Listinginfo">Description</div>
-                        <div className="Listinginfo">Last Seen:</div>
-                        <div className="Listinginfo">Contact:</div>
-                    </div>
                     
                     
                 </div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './register.css';
+import './updateprofile.css';
 //import axios from 'axios';
 
-class Register extends Component {
+class UpdateProfile extends Component {
     constructor(props) {
         super(props);
             this.state = {
@@ -34,71 +34,72 @@ class Register extends Component {
 
                 <form className="RegistrationForm" onSubmit={(event) => this.handleSubmit(event)}>
                      <div className='Registerheader'>
-                        < h1>Sign Up</h1>
+                     <img className="ProfilePhoto" src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
+                        <h1>Update Profile </h1>
                     </div>
+                    <div>
+                            <label>FirstName</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+
+                    <div>
+                            <label>Last Name</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>UserName</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>Email</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>State</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>City</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>Zip Code</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>Phone Number</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>Adress</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                    <div>
+                            <label>Password</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
                     <br/>
-                    <div>
-                        <label>FirstName</label>
-                    </div> 
-                    <div className="inputDiv">
-                        <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>LastName</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="definition" placeholder={this.state.definition} onChange={(event) => this.handleDefinitionChange(event)}/>
-                    </div>
-                    <div>
-                        <label>UserName</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>Email</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>State</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>City</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>Zipcode</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>Phone Number</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>Adress</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>Pasword</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="word" placeholder={this.state.definition} onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <br/>
-                    <button type="submit" >Register</button>
+                    <button className="submitButton" type="submit" >Update</button>
                     <br/>
                     
                 
@@ -109,4 +110,4 @@ class Register extends Component {
     }
 }
 
-export default Register;
+export default UpdateProfile;
