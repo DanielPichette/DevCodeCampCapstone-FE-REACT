@@ -12,7 +12,7 @@
     height: 20vh;
     color: white;
 }
-.BrowsePet{
+.BrowsePet, .BrowseLocal{
     display: grid;
     grid-area: bpet;
     place-content: center;
@@ -35,6 +35,6 @@
     background-color: rgb(28, 38, 43);
 }
 
-.BrowsePet:hover{
+.BrowsePet:hover, .BrowseLocal:hover, .BrowsItem:hover {
     background-color: darksalmon;
 }

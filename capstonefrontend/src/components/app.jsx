@@ -6,11 +6,15 @@ import Register from './Register/register';
 import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
 import UpdateProfile from './update Profile/updateprofile';
+import ItemView from './VItem View/itemView';
 import Login from './Login/login';
 import PetView from './PetsView/petsview';
+import ViewListing  from './View listing/viewListing'
+import Resources from './Resources/resources';
 import Lost from './LostPet/lostpets';
 import SearchView from './SearchView/searchview';
 import ProfileView from './ProfileView/profile';
+import CreatePetListing from './CreatePetLIsting/CreatePetListing';
 import {
     BrowserRouter as Router,
     Switch,
@@ -27,13 +31,15 @@ class App extends Component {
         allPets: [],
         allLost:[],
         allUsers:[],
-        PetView:""
+        PetView:"",
+        userListings:[]
         
     }
     componentDidMount(){
         this.getUsers()
         this.getItems()
         this.getPetListings()
+        this.getAllLost()
     }
 
 
@@ -64,6 +70,15 @@ class App extends Component {
         console.log('all Pets:',this.state.allPets)
     };
 
+    getAllLost = async() => {
+        let lostPets = await axios.get(`http://127.0.0.1:8000/LostPets/`)
+        console.log(lostPets)
+        this.setState({
+            allLost: lostPets.data,
+        })
+        console.log('Lost Pets:',this.state.allLost)
+    };
+
     render() {
         return (
             <div className="MainWrapper">
@@ -86,10 +101,28 @@ class App extends Component {
                                     <SearchView/>
                                 </Route>
                                 <Route path="/Lost" component={Lost}>
-                                    <Lost/>
+                                    <Lost lostpets={this.state.allLost}/>
                                 </Route>
                                 <Route path="/UpdateProfile" component={UpdateProfile}>
                                     <UpdateProfile/>
+                                </Route>
+                                <Route path="/PetView" component={PetView}>
+                                    <PetView/>
+                                </Route>
+                                <Route path="/Login" component={Login}>
+                                    <Login/>
+                                </Route>
+                                <Route path="/CreatePetListing" component={CreatePetListing}>
+                                    <CreatePetListing/>
+                                </Route>
+                                <Route path="/Resources" component={Resources}>
+                                    <Resources/>
+                                </Route>
+                                <Route path="/listing" component={ViewListing}>
+                                    <  ViewListing/>
+                                </Route>
+                                <Route path="/ItemView" component={ItemView}>
+                                    <  ItemView/>
                                 </Route>
                             </Switch>
                 

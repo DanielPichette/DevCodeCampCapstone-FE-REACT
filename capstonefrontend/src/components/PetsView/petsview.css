@@ -38,3 +38,11 @@
     display: grid;
     place-content: center;
 }
+
+.ListingImage{
+    display: grid;
+    max-height: 200px;
+    max-width: 200px;
+    background-color: rgb(206, 206, 206);
+    place-content: center;
+}

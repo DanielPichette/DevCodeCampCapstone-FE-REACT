@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import './header.css';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
     state = { 
@@ -24,8 +25,10 @@ class Header extends Component {
                 </div>
 
                 <div className='HeaderAccount'>
+                <Link to="/Profile">
+                        <h1 class="NavButton" style={{color:"black"}}>Account</h1>
+                    </Link>
 
-                    <h1>Account</h1>
                     <img src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="icon"/>
 
                 </div>

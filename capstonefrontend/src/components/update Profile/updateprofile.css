@@ -2,6 +2,8 @@
     height: 15vh;
     width: auto;
     size: comtain;
+    justify-self: center;
+    margin-top: 20px;
 }
 
 .RegistrationForm{

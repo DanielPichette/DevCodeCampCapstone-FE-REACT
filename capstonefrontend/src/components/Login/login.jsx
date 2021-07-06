@@ -34,24 +34,24 @@ class Login extends Component {
 
                 <form className="RegistrationForm" onSubmit={(event) => this.handleSubmit(event)}>
                      <div className='Registerheader'>
-                        < h1>Login</h1>
+                     <img className="ProfilePhoto" src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
+                        <h1>Login </h1>
                     </div>
-                    <br/>
                     <div>
-                        <label>FirstName</label>
+                            <label>User Name</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
                     </div> 
-                    <div className="inputDiv">
-                        <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                    </div>
-                    <div>
-                        <label>LastName</label>
-                    </div> 
-                    <div>
-                        <input type="text" name="definition" placeholder={this.state.definition} onChange={(event) => this.handleDefinitionChange(event)}/>
-                    </div>
 
-                    <br/>
-                    <button type="submit" >Login</button>
+                    <div>
+                            <label>Password</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                        </div>
+                    </div> 
+                   
+                    <button className="submitButton" type="submit" >Update</button>
                     <br/>
                     
                 

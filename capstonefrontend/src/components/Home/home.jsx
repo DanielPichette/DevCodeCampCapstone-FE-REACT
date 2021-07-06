@@ -73,6 +73,48 @@ class Home extends Component {
                 <br/>
                 <div className="CatBar">
                     <div className="CatBarListing">
+                        <div className="CatBarListingImage">
+                            <img src="https://image.flaticon.com/icons/png/512/4867/4867184.png" alt="" style={{maxWidth:"200px", maxHeight:"200px"}}/>
+                        </div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
                         <div className="CatBarListingImage">IMG</div>
                         <div className="CatBarListingName">Name</div>
                     </div>
@@ -141,7 +183,46 @@ class Home extends Component {
                 <br/>
                 <div className="DogBar">
                     <div className="DogBarListing">
-                        <div className="DogBarListingImage">IMG</div>
+                        <div className="DogBarListingImage">
+                        <img src="https://image.flaticon.com/icons/png/512/4867/4867176.png" alt="" style={{maxWidth:"200px", maxHeight:"200px"}}/>
+                        </div>
+                        <div className="CatBarListingName">Name</div>
+                        
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>vv<div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
                         <div className="CatBarListingName">Name</div>
                     </div>
 
@@ -149,8 +230,47 @@ class Home extends Component {
                 <br/>
                 <div className="ItemBar">
                     <div className="ItemBarListing">
-                        <div className="ItemBarListingImage">IMG</div>
+                        <div className="ItemBarListingImage">
+                        <img src="https://image.flaticon.com/icons/png/512/4867/4867184.png" alt="" style={{maxWidth:"200px", maxHeight:"200px"}}/>
+                        </div>
                         <div className="ItemBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div>
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
+                    </div><div className="CatBarListing">
+                        <div className="CatBarListingImage">IMG</div>
+                        <div className="CatBarListingName">Name</div>
                     </div>
 
 

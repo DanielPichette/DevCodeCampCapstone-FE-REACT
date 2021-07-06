@@ -1,6 +1,6 @@
 .NavigationBody{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto ;
+    grid-template-columns: auto auto  auto auto auto auto auto auto;
     grid-template-rows: auto;
     background-color: rgb(124, 124, 124);
     color: white;
@@ -13,4 +13,8 @@
     place-content: center;
     height: 3vh;
 
+}
+
+.NavButton{
+    color: white;
 }

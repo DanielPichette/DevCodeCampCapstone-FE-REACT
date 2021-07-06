@@ -1,13 +1,15 @@
 import React from 'react';
 import './homeBrowse.css';
+import {Link} from 'react-router-dom';
 
 
 function HomeBrowse(props){
     return (
             <div class='HomeBrowseBody'>
                 <div className="BrowsePet">
-                    Browse Pets
-                    {/* <img src="https://lh4.googleusercontent.com/proxy/betMKwSz3pf61Nc6gfoyF7o186LjzjP9iaS_XJAiGDoMdZkIcEgybhBDDzsN7EUEI-KCVr34z3nIJ-zLHdKTdQNx93lc9FjZIpsW1-U5NvguUsm2Z4KzldPsgjl8vSgEzVq4trpNUa3YAA=s0-d" alt=""/> */}
+                <Link to="/PetView" style={{color:"white"}}>
+                        Browse Pets
+                    </Link>                    {/* <img src="https://lh4.googleusercontent.com/proxy/betMKwSz3pf61Nc6gfoyF7o186LjzjP9iaS_XJAiGDoMdZkIcEgybhBDDzsN7EUEI-KCVr34z3nIJ-zLHdKTdQNx93lc9FjZIpsW1-U5NvguUsm2Z4KzldPsgjl8vSgEzVq4trpNUa3YAA=s0-d" alt=""/> */}
                     {/* <img src="https://www.petinsurancereview.com/sites/default/files/inline-images/homepage%2001_0.png" alt=""/> */}
                   
                 </div>

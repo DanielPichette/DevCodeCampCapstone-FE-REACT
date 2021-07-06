@@ -1,0 +1,40 @@
+.ViewListingWrapper{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'pic info';
+    background-color: grey;
+    margin: auto;
+    margin-top: 10vh;
+    height: 60vh;
+}
+
+.ViewListingImage{
+    grid-area: pic;
+    display: grid;
+    object-fit: contain;
+    height: 60vh;
+    overflow: hidden;
+}
+
+
+.ViewListingInfo {
+    grid-area: info;
+    display: grid;
+    padding:10px;
+    text-align: center;
+    
+
+}
+
+.viewimg{
+    display: grid;
+    height: 60vh;
+    width: 60vh;
+    place-content: center;
+    object-position: center;
+    overflow:hidden;
+    object-fit: cover;
+
+}

@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
-import './updateprofile.css';
-import {Link} from 'react-router-dom';
+import './CreatePetListing.css';
 //import axios from 'axios';
 
-class UpdateProfile extends Component {
+class CreatePetListing extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                tbd: "tbd",
-             }
+                name: "T2",
+                type: null,
+                age: null,
+                fixed: null,
+                gender: null,
+                breed: null,
+                price: null,
+                children: null,
+                pets: null,
+                description: "test",
+                pictures: null,
+                user: 0
+            }
         }
     handleDefinitionChange = (event) =>{
         this.setState({
@@ -30,76 +40,81 @@ class UpdateProfile extends Component {
 
     render() {
         return (        
-            <div className="RegisterContainer">
+            <div className="ListingFormContainer">
            <div className = 'BackgroundOverlay'></div>  
 
-                <form className="RegistrationForm" onSubmit={(event) => this.handleSubmit(event)}>
-                     <div className='Registerheader'>
-                     <img className="ProfilePhoto" src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
-                        <h1>Update Profile </h1>
+                <form className="ListingForm" onSubmit={(event) => this.handleSubmit(event)}>
+                     <div className='ListingHeader'>
+                        <h1>New Pet Listing </h1>
                     </div>
                     <div>
-                            <label>FirstName</label>
+                            <label>Name</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            <input className="FormInput" type="text" name="type"  onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
                     </div> 
 
                     <div>
-                            <label>Last Name</label>
+                            <label>Type</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
                         </div>
                     </div> 
                     <div>
-                            <label>UserName</label>
+                            <label>Age</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>Email</label>
+                            <label>Fixed</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
+                    </div>
+                    <div>
+                            <label>Gender</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
                     </div> 
                     <div>
-                            <label>State</label>
+                            <label>Breed</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>City</label>
+                            <label>Price</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>Zip Code</label>
+                            <label>Good with children?</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>Phone Number</label>
+                            <label>Good with other Pets?</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>Adress</label>
+                            <label>Description</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
                     <div>
-                            <label>Password</label>
+                            <label>Pictures</label>
                             <div className="inputDiv">
                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
-                        </div>
+                            </div>
                     </div> 
-                    <br/>
+                   
                     <button className="submitButton" type="submit" >Update</button>
                     <br/>
                     
@@ -111,4 +126,4 @@ class UpdateProfile extends Component {
     }
 }
 
-export default UpdateProfile;
+export default CreatePetListing;

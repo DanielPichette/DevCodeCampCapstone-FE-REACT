@@ -6,7 +6,7 @@ class Lost extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                LostPets: [],
+                LostPets: [this.props.lostpets],
              }
         }
 
@@ -15,21 +15,24 @@ class Lost extends Component {
         return ( 
             <div className="LostWrapper">
                 <div className="LostHeader">
-                    <h1>Have Yoou Seen Me?</h1>
+                    <h1>Have You Seen Me?</h1>
                 </div>
                 <div className="LostBody">
-                    <div className="LostListing">
+                    
+                    {this.props.lostpets.map((pet)=>{
+                        return(
+                        <div className="LostListing">
                         <div className="LostImg">
                             IMG
                         </div>
                     
                         <div className="Listinginfo">
                             <h3>Name:</h3><br/>
-                            <h4>Name</h4>
+                            <h4>{pet.name}</h4>
                         </div>
                         <div className="Listinginfo">
                             <h3>Description:</h3><br/>
-                            <h4>Description</h4>
+                            <h4>{pet.description}</h4>
                         </div>
                         <div className="Listinginfo">
                             <h3>Date Last Seen:</h3><br/>
@@ -42,7 +45,8 @@ class Lost extends Component {
                                 Email: @gmail.com
                             </h4>
                         </div>
-                    </div>
+                    </div>)
+                    })} 
                     
                     
                     

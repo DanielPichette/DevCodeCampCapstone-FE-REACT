@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './profile.css';
+import {Link} from 'react-router-dom';
 //import axios from 'axios';
 
 class ProfileView extends Component {
@@ -27,8 +28,9 @@ class ProfileView extends Component {
                    <p>Username:</p>
                    <p>Email:</p>
                    <p>City</p>
-                  
-                   <button>Update</button>
+                   <Link to="/UpdateProfile">
+                        <button>Update</button>
+                    </Link>
                </div>
                <div className="ProfileListings">
                <h3>Your Listings:</h3>
