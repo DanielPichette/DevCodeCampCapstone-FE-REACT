@@ -24,16 +24,32 @@
 }
 .LostListing{
     display: grid;
-    background-color: whitesmoke;
-    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(232, 232, 232);
+    grid-template-columns: auto 1fr 2fr 1fr 1fr;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
+.LostListing:hover{
+    box-shadow: 0 0 40px  rgb(58, 37, 49);}
 
 .LostImg{
     display: grid;
     height: 30vh;
     width: 30vh;
     background-color: pink;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+.LostPicture{
+    height: auto;
+    width: auto;
+    background-color: pink;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: fit;
+    object-position: center;
+
 }
 
 .Listinginfo{

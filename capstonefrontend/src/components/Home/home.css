@@ -54,7 +54,7 @@ background-image: linear-gradient(rgba(250, 128, 114, 0.399),rgba(39, 47, 75, 0.
 .CatBar, .ItemBar, .DogBar{
     display: flex;
     max-width: 100vw;
-    min-height: 210px;
+    min-height: 240px;
     background-color: whitesmoke;
     overflow-x: auto;
 }
@@ -65,14 +65,17 @@ background-image: linear-gradient(rgba(250, 128, 114, 0.399),rgba(39, 47, 75, 0.
     place-content: center;
     margin-right: 8px;
     color: white;
+
 }
 
 .CatBarListingImage, .DogBarListingImage, .ItemBarListingImage{
     display: grid;
     min-height: 200px;
+    max-height: 200px;
     min-width: 200px;
     background-color: rgb(206, 206, 206);
     place-content: center;
+    overflow: hidden;
 }
 
 .CatBarListingName,.DogBarListingName,.ItemBarListingName{
@@ -81,8 +84,8 @@ background-image: linear-gradient(rgba(250, 128, 114, 0.399),rgba(39, 47, 75, 0.
 }
 
 .CatBarListing:hover, .DogBarListing:hover, .ItemBarListing:hover{
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-    background-color: rgb(255, 165, 136);
+    box-shadow: 0 0 40px  rgb(0, 0, 0);
+    background-color: rgb(255, 125, 81);
     color: rgb(0, 0, 0);
     font-weight: bolder;
 

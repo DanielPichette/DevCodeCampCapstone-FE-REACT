@@ -19,9 +19,11 @@ class Header extends Component {
                 </div>
 
                 <div className='HeaderSearch'>
-                    <form className='HeaderSearchForm'>
-                        <input type="text" name="searchbar" className='SearchBar' placeholder="Search" />
-                    </form>
+                    <Link to="/SearchResults">
+                    <div className='HeaderSearchForm'>
+                        <input type="text" name="searchinput" className='SearchBar' placeholder="Search" onChange={(event) => this.props.handleChange(event)}/>
+                    </div>
+                    </Link>
                 </div>
 
                 <div className='HeaderAccount'>

@@ -6,33 +6,28 @@ class Login extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                tbd: "tbd",
+                username: null,
+                password: null,
              }
         }
-    handleDefinitionChange = (event) =>{
+    handleChange = (event) =>{
         this.setState({
-        definition: event.target.value
+            [event.target.name]: event.target.value
         });
+        console.log(this.state)
         };
 
-    handleSubmit = async(event) =>{
-        //event.preventDefault();
-
-        // const newCard = {
-        //     collection: this.props.collection,
-        //     word: this.state.word,
-        //     definition: this.state.definition,
-        // }
-        //await axios.post(`http://127.0.0.1:8000/notecards/`,newCard);
-     };
-
+     HandleSubmit(event){
+         event.preventDefault();
+         this.props.getCurrentUser(event, ()=>this.state.username, ()=>this.state.password,);
+     }
 
     render() {
         return (        
             <div className="RegisterContainer">
            <div className = 'BackgroundOverlay'></div>  
 
-                <form className="RegistrationForm" onSubmit={(event) => this.handleSubmit(event)}>
+                <form className="RegistrationForm" onSubmit={(event) => this.props.getCurrentUser(event, this.state.password, this.state.username)}>
                      <div className='Registerheader'>
                      <img className="ProfilePhoto" src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
                         <h1>Login </h1>
@@ -40,18 +35,18 @@ class Login extends Component {
                     <div>
                             <label>User Name</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="username" placeholder="Username" onChange={(event) => this.props.handleChange(event)}/>
                         </div>
                     </div> 
 
                     <div>
                             <label>Password</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="password" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                         </div>
                     </div> 
                    
-                    <button className="submitButton" type="submit" >Update</button>
+                    <button className="submitButton" type="submit" >login</button>
                     <br/>
                     
                 

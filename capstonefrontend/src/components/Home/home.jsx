@@ -4,11 +4,13 @@ import Navigation from '../NavigationBar/navigation';
 import Welcome from '../Welcome/welcome';
 import HomeBrowse from '../HomeBrowse/homeBrowse';
 import './home.css';
+import {Link} from 'react-router-dom';
 
 class Home extends Component {
     state = { 
-        tbd:"tbd",
+        tbd: "tbd",
      }
+
     render() { 
         return ( 
             <div className="MainWrapper">
@@ -19,9 +21,22 @@ class Home extends Component {
                 </div>
                 <br/>
 
-                <div>
-                    <HomeBrowse/>
+                <div class='HomeBrowseBody'>
+                <div className="BrowsePet">
+                    <Link to="/PetView" style={{color:"white"}}>
+                            Browse Pets
+                    </Link>
                 </div>
+
+                <div className="BrowseLocal" onClick={()=>this.props.getlocal()}>
+                    Browse Local
+                </div>
+
+                <div className="BrowsItem">
+                    Browse Items
+                </div>
+         
+            </div>
                 <br/>
 
                 <div className="SearchByAnimalHeader">
@@ -78,106 +93,24 @@ class Home extends Component {
                         </div>
                         <div className="CatBarListingName">Name</div>
                     </div>
+                    
+                    {this.props.state.allPets.filter(function (el) {
+                    return el.type=="cat"}).map((pet)=>{
+                        return(
                     <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
+                        <div className="CatBarListingImage">
+                            <img src={pet.pictures} onClick={()=>this.props.viewpet(pet)}/>
+                        </div>
+                        <Link to="/listing" style={{color:"white"}}>
+                            <div className="CatBarListingName">{pet.name}</div>
+                        </Link>
                     </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
+                        )
+                        })}
+
+
+
+                    
 
                 </div>
                 <br/>
@@ -193,38 +126,17 @@ class Home extends Component {
                         <div className="CatBarListingImage">IMG</div>
                         <div className="CatBarListingName">Name</div>
                     </div>
+                    {this.props.state.allPets.filter(function (el) {
+                    return el.type=="dog"}).map((pet)=>{
+                        return(
                     <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
+                        <div className="CatBarListingImage">
+                        <img src={pet.pictures}/>
+                        </div>
+                        <div className="CatBarListingName">{pet.name}</div>
                     </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>vv<div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div><div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
+                        )
+                        })}
 
                 </div>
                 <br/>
@@ -235,10 +147,14 @@ class Home extends Component {
                         </div>
                         <div className="ItemBarListingName">Name</div>
                     </div>
+                    {this.props.state.allItems.map((pet)=>{
+                        return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
+                        <div className="CatBarListingName">{pet.name}</div>
                     </div>
+                        )
+                        })}
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">IMG</div>
                         <div className="CatBarListingName">Name</div>

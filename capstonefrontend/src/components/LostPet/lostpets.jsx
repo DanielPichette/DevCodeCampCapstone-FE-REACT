@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './lostpet.css';
+import { Link } from 'react-router-dom';
 //import axios from 'axios';
 
 class Lost extends Component {
@@ -22,8 +23,8 @@ class Lost extends Component {
                     {this.props.lostpets.map((pet)=>{
                         return(
                         <div className="LostListing">
-                        <div className="LostImg">
-                            IMG
+                        <div className="LostPicture">
+                            <img className="LostImg" src={pet.pictures} alt="img"/>
                         </div>
                     
                         <div className="Listinginfo">
@@ -36,13 +37,15 @@ class Lost extends Component {
                         </div>
                         <div className="Listinginfo">
                             <h3>Date Last Seen:</h3><br/>
-                            <h4>Date</h4></div>
+                            <h4>{pet.lastSeen}</h4></div>
                         <div className="Listinginfo">
                             <h3>Contact:</h3><br/>
                             <h4>
-                                Name: name <br/>
-                                Phone: xxx-xxx-xxxx <br/>
-                                Email: @gmail.com
+                                Phone: {pet.phone} <br/>
+                                Email: {pet.email}
+                                <div>
+                                    <a href={`mailto:${pet.email}`}>Email</a>
+                                </div>
                             </h4>
                         </div>
                     </div>)
@@ -51,6 +54,9 @@ class Lost extends Component {
                     
                     
                 </div>
+                <Link to="/LostPetForm">
+                <button style={{justifySelf:'right'}}>Add Lost PetListing</button>
+                </Link>
                 
             </div>
              

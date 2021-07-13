@@ -22,12 +22,12 @@ class ProfileView extends Component {
                <div className="ProfileInfo">
                    <img src="https://image.flaticon.com/icons/png/512/3011/3011270.png" alt="user"/>
                    <h1>Account Summary</h1>
-                   <p>UserName: </p>
-                   <p> First Name:</p>
-                   <p>Last Name:</p>
-                   <p>Username:</p>
-                   <p>Email:</p>
-                   <p>City</p>
+                   <p>UserName: {this.props.state.currentUser.username}</p>
+                   <p> First Name: {this.props.state.currentUser.firstName}</p>
+                   <p>Last Name: {this.props.state.currentUser.lastName}</p>
+                   <p>Username: {this.props.state.currentUser.username}</p>
+                   <p>Email: {this.props.state.currentUser.email}</p>
+                   <p>City: {this.props.state.currentUser.city}</p>
                    <Link to="/UpdateProfile">
                         <button>Update</button>
                     </Link>
@@ -35,70 +35,17 @@ class ProfileView extends Component {
                <div className="ProfileListings">
                <h3>Your Listings:</h3>
                <div className="CatBar">
+               {this.props.state.allPets.filter(function (el) {
+                    return el.user==5}).map((pet)=>{
+                        return(
                     <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
+                        <div className="CatBarListingImage">
+                            <img src={pet.pictures} alt=""/>
+                        </div>
+                        <div className="CatBarListingName">{pet.name}</div>
                     </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">IMG</div>
-                        <div className="CatBarListingName">Name</div>
-                    </div>
+                        )
+                        })}
 
                 </div>
                 

@@ -1,30 +1,72 @@
 import React, { Component } from 'react';
 import './register.css';
-//import axios from 'axios';
+import axios from 'axios';
+
+            
 
 class Register extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                tbd: "tbd",
+                firstName: "null",
+                lastName: 'null',
+                username:"null",
+                email:"null",
+                state:"null",
+                city:"null",
+                address:'null',
+                zipcode:"null",
+                phone:"null",
+                password:"null",
              }
         }
-    handleDefinitionChange = (event) =>{
+
+    handleChange = (event) =>{
         this.setState({
-        definition: event.target.value
+            [event.target.name]: event.target.value
         });
+        console.log(this.state)
         };
 
-    handleSubmit = async(event) =>{
-        //event.preventDefault();
+    handleSubmit = async (event) => {
+        try {
+            event.preventDefault();
+            const newUser = {
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                username: this.state.username,
+                email: this.state.email,
+                state: this.state.state,
+                city: this.state.city,
+                address: this.state.address,
+                zipcode: this.state.zipcode,
+                phone: this.state.phone,
+                password: this.state.password
+            };
+        
+        await axios.post(`http://127.0.0.1:8000/Users/`,newUser);
 
-        // const newCard = {
-        //     collection: this.props.collection,
-        //     word: this.state.word,
-        //     definition: this.state.definition,
-        // }
-        //await axios.post(`http://127.0.0.1:8000/notecards/`,newCard);
-     };
+        this.props.setuser(newUser)
+        console.log("new User ==",newUser)
+        } 
+        catch (error) {
+            console.log(error)
+        }
+        finally{
+            this.setState({
+                firstName: null,
+                lastName: null,
+                username:null,
+                email:null,
+                state:null,
+                city:null,
+                address:null,
+                zipcode:null,
+                phone:null,
+                password:null,
+            });
+        }
+    }
 
 
     render() {
@@ -40,66 +82,66 @@ class Register extends Component {
                      <div>
                              <label>FirstName</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="firstName" placeholder="FirstName" onChange={(event) => ()=>this.handleChange(event)}/>
                          </div>
                      </div> 
  
                      <div>
                              <label>Last Name</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="lastName" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>UserName</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="username" placeholder="username" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Email</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="email" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>State</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="state" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>City</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="city" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Zip Code</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="zipcode" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Phone Number</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="phone" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Adress</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="address" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Password</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="word" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                             <input className="FormInput" type="text" name="password" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <br/>
-                     <button className="submitButton" type="submit" >Update</button>
+                     <button className="submitButton" type="submit">Register</button>
                      <br/>
                      
                  
