@@ -18,7 +18,9 @@ class CreatePetListing extends Component {
                 pets: null,
                 description: null,
                 pictures: null,
-                user: null
+                user: null,
+                city: null,
+                state:null,
             }
         }
     handleTermChange = (event) =>{
@@ -43,7 +45,9 @@ class CreatePetListing extends Component {
                 pets: this.state.pets,
                 description: this.state.description,
                 pictures: this.state.pictures,
-                user: 1
+                city: this.state.city,
+                state: this.state.state,
+                user: 5
             };
         
         await axios.post(`http://127.0.0.1:8000/Pets/`,newpet);
@@ -64,7 +68,9 @@ class CreatePetListing extends Component {
                 pets: null,
                 description: null,
                 pictures: null,
-                user: 1
+                city: null,
+                state: null,
+                user: 5
             });
         }
     }    
@@ -126,29 +132,41 @@ class CreatePetListing extends Component {
                     <div>
                             <label>Good with children?</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="children" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="children" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Good with other Pets?</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="pets" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="pets" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Description</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="description" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="description" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Pictures</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="file" name="pictures" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="pictures" placeholder="URL" onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
+                    </div> 
+                    <div>
+                            <label>City</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="city" placeholder="URL" onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
+                    </div> 
+                    <div>
+                            <label>State</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="text" name="state" placeholder="URL" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                    
-                    <button className="submitButton" type="submit" >Update</button>
+                    <button className="submitButton" type="submit" >Create</button>
                     <br/>
                     
                 

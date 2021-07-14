@@ -15,9 +15,22 @@ class Resources extends Component {
     render() {
         return ( 
           <div className="Resources">
-            <div>TEMP</div>
+            
+            <div className="detail">
+              <h1>Local Vettinary Clinics:</h1>
+            {this.props.state.resources.map((pet)=>{
+                        return(
+                    <div className="Resource">
+                        <h2>{pet.name}</h2>
+                        <h3>Rating: {pet.rating}</h3>
+                        <h3>Adress: {pet.vicinity}</h3>  
+                    </div>
+                    
+                        )
+                        })}
+            </div>
             <div className="map">
-              {/* <Map google={this.props.google} zoom={15} initialCenter={{ lat: 43.0963042, lng: -87.8878806 }} style={{width:'50vw',height:'80vh'}}>
+               <Map  google={this.props.google} zoom={15} initialCenter={{ lat: 43.0963042, lng: -87.8878806 }} style={{width:'60vw',height:'80vh', display:'grid', position:'left'}}>
                 {this.props.state.resources.map(place =>(
                   <Marker
                   key={place.name}
@@ -27,12 +40,12 @@ class Resources extends Component {
                   }}
                   />
                 ))}
-                <InfoWindow onClose={this.onInfoWindowClose}>
-                      {/* <div>
+                 {/*<InfoWindow onClose={this.onInfoWindowClose}>
+                      <div>
                       <h1>{this.state.selectedPlace.name}</h1>
                     </div>  
-                </InfoWindow>
-              </Map> */}
+                </InfoWindow>*/}
+              </Map> 
           </div>
 
           </div>
@@ -41,5 +54,5 @@ class Resources extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ("AIzaSyApIi4wU9eRbKJHcLrMZ2v6Ju4IqXGAnfw")
+  apiKey: ()
 })(Resources)

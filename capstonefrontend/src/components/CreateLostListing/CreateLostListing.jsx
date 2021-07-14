@@ -33,7 +33,7 @@ class LostPetForm extends Component {
                 phone: this.state.phone,
                 email: this.state.email,
                 pictures: this.state.pictures,
-                user: 1
+                user: 5
             };
         
         await axios.post(`http://127.0.0.1:8000/LostPets/`,newlost);

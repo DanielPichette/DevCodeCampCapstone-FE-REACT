@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './app.css';
+import Local from './Local/local';
 import Home from './Home/home';
 import Register from './Register/register';
 import Navigation from './NavigationBar/navigation';
 import Header from './Header/header';
 import UpdateProfile from './update Profile/updateprofile';
-import ItemView from './VItem View/itemView';
+import ItemView from './Item View/itemView';
 import Login from './Login/login';
 import CreateItemListing from './CreateItemListing/craeteitemlisting';
 import PetView from './PetsView/petsview';
 import LostPetForm from './CreateLostListing/CreateLostListing';
 import ViewListing  from './View listing/viewListing'
 import Resources from './Resources/resources';
+import Bird from './Bird/bird';
+import Cat from './Cat/cat';
+import Dog from './Dog/dog';
+import Reptile from './Reptile/reptile';
+import Fish from './Fish/fish';
+import SmallAnimal from './SmallAnimal/small animal';
+
 import Lost from './LostPet/lostpets';
 import SearchView from './SearchView/searchview';
 import ProfileView from './ProfileView/profile';
@@ -33,7 +41,7 @@ class App extends Component {
             city: "shorewood",
             email: "daniel.f.pichette@gmial.com",
             firstName: "Danny",
-            id: 1,
+            id: 5,
             lastName: "Pichette",
             password: "pass",
             phone: "4149431116",
@@ -57,6 +65,7 @@ class App extends Component {
         localpets:[],
         searchinput: "cat",
         searchresults:[],
+        itemsearchresults:[],
         long: null,
         lat: null,
         resources: [
@@ -319,7 +328,7 @@ class App extends Component {
 
     getGeocode = async() => {
         let adress= '4421 N Maryland Avenue, Shorewood, WI'
-        let all = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${adress}&key=AIzaSyApIi4wU9eRbKJHcLrMZ2v6Ju4IqXGAnfw`)
+        let all = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${adress}&key=apikey`)
         let geocode =all.data.results[0].geometry.location.lng
         console.log("long",geocode)
         
@@ -333,7 +342,7 @@ class App extends Component {
     getResources = async() => {
         let lat= 43.0963042;
         let lng = -87.8828156;
-        let all = await axios.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=43.0963042,-87.8828156&radius=1500&type=veterinary_care&key=AIzaSyApIi4wU9eRbKJHcLrMZ2v6Ju4IqXGAnfw`)
+        let all = await axios.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=43.0963042,-87.8828156&radius=1500&type=veterinary_care&key=API KEY`)
         console.log("RESOURCES",all)
         
     };
@@ -416,13 +425,17 @@ class App extends Component {
             localpets: newarray
         })
         console.log(newarray)
-        console.log(this.state.currentUser.city)
+        console.log("Shorewood")
     }
-     getSearchResults  (event){
+     getSearchResults (event){
         var newarray = this.state.allPets.filter( function (el) {
-            return el.location.includes(event.target.value) || el.type.includes(event.target.value) || el.name.includes(event.target.value) || el.state.includes(event.target.value) || el.price==(event.target.value) || el.gender===(event.target.value)
+            return el.location==(event.target.value) || el.type==(event.target.value) || el.name.includes(event.target.value) || el.state==(event.target.value) || el.price==(event.target.value) || el.gender==(event.target.value)
+        });
+        var items = this.state.allItems.filter( function (el) {
+            return el.location==(event.target.value) || el.animal==(event.target.value) || el.name.includes(event.target.value) || el.category==(event.target.value) || el.price==(event.target.value) || el.age===(event.target.value)
         });
         this.setState({
+            itemsearchresults: items,
             searchresults: newarray,
             searchinput: event.target.value
         })
@@ -447,12 +460,12 @@ class App extends Component {
             <div className="MainWrapper">
                 <Router>
                     <div>
-                        <Header state={()=>this.state} handleChange={(event)=>this.getSearchResults(event)} results={(event)=>this.getSearchResults(event)}/>
+                        <Header state={()=>this.state} handleChange={(event)=>this.getSearchResults(event)} />
                         <Navigation />
                         <div className="Content">
                             <Switch>
                                 <Route path="/" exact component={Home}>
-                                    <Home state={this.state} viewpet={()=>this.GetPet()} getlocal={()=>this.getlocalpets("this.state.currentUser.city")} viewpet={()=>this.viewpet()}/>
+                                    <Home state={this.state} viewpet={()=>this.GetPet()} getlocal={(event)=>this.getlocalpets(event,"shorewood")} viewpet={()=>this.viewpet()}/>
                                 </Route>
                                 <Route path="/Register" component={Register}>
                                     <Register state={this.state} setuser={()=>this.SetCurrentUser()}/>
@@ -488,18 +501,39 @@ class App extends Component {
                                     <  ItemView state={this.state}/>
                                 </Route>
                                 <Route path="/CreateItemListing" component={CreateItemListing}>
-                                    <  CreateItemListing state={this.state}/>
+                                    <  CreateItemListing />
                                 </Route>
                                 <Route path="/LostPetForm" component={LostPetForm}>
-                                    <  LostPetForm state={this.state}/>
+                                    <  LostPetForm />
+                                </Route>
+                                <Route path="/Cat" component={Cat}>
+                                    <  Cat state={this.state}/>
+                                </Route>
+                                <Route path="/Dog" component={Dog}>
+                                    <  Dog state={this.state}/>
+                                </Route>
+                                <Route path="/Reptile" component={Reptile}>
+                                    <  Reptile state={this.state}/>
+                                </Route>
+                                <Route path="/SmallAnimal" component={SmallAnimal}>
+                                    <  SmallAnimal state={this.state}/>
+                                </Route>
+                                <Route path="/Fish" component={Fish}>
+                                    <  Fish state={this.state}/>
+                                </Route>
+                                <Route path="/Bird" component={Bird}>
+                                    <  Bird state={this.state}/>
+                                </Route>
+                                <Route path="/Local" component={Local}>
+                                    <  Local state={this.state}/>
                                 </Route>
                             </Switch>
-                            <button onClick={()=>this.SetCurrentUser("potato")}>currentUser</button>
+                            {/* <button onClick={()=>this.SetCurrentUser("potato")}>currentUser</button>
                             <button onClick={(event)=>this.GetPet(1)}>getpet</button>
                             <button onClick={(event)=>this.getlocalpets(event, this.state.currentUser.city)}>getlocal</button>
                             <button onClick={(event)=>this.getSearchResults(event)}>results</button>
                             <button onClick={()=>this.checkstate()}>CheckState</button>
-
+ */}
 
 
                 

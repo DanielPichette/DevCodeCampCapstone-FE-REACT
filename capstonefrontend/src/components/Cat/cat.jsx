@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import PetView from '../PetsView/petsview';
-import './searchview.css';
 //import axios from 'axios';
 
-class SearchView extends Component {
+class cat extends Component {
     constructor(props) {
         super(props);
             this.state = {
@@ -15,15 +13,16 @@ class SearchView extends Component {
     render() {
         return (        
             <div className="SearchViewContainer">
-                <h3 style={{margin:"0px"}}>Results matching {this.props.state.searchinput}</h3>
+                <h1>CAT</h1>
                 <h2 style={{margin:"0px"}}>Pets:</h2>
 
                 <div className="CatBar">
-                {this.props.state.searchresults.map((pet)=>{
+                {this.props.state.allPets.filter(function (el) {
+                    return el.type=="cat"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
-                        <img src={pet.pictures}/>
+                        <img src={pet.pictures} alt=""/>
                         </div>
                         <div className="CatBarListingName">{pet.name}</div>
                     </div>
@@ -37,11 +36,12 @@ class SearchView extends Component {
                 <h2 style={{margin:"0px"}}>Items:</h2>
                 <div className="ItemResults">
                 <div className="CatBar">
-                {this.props.state.itemsearchresults.map((pet)=>{
+                {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="cat"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
-                        <img src={pet.pictures}/>
+                        <img src={pet.pictures} alt=""/>
                         </div>
                         <div className="CatBarListingName">{pet.name}</div>
                     </div>
@@ -56,4 +56,4 @@ class SearchView extends Component {
     }
 }
 
-export default SearchView;
+export default cat;

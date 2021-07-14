@@ -46,6 +46,28 @@ class ProfileView extends Component {
                     </div>
                         )
                         })}
+                        {this.props.state.allItems.filter(function (el) {
+                    return el.user==5}).map((pet)=>{
+                        return(
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">
+                            <img src={pet.pictures} alt=""/>
+                        </div>
+                        <div className="CatBarListingName">{pet.name}</div>
+                    </div>
+                        )
+                        })}
+                        {this.props.state.allLost.filter(function (el) {
+                    return el.user==5}).map((pet)=>{
+                        return(
+                    <div className="CatBarListing">
+                        <div className="CatBarListingImage">
+                            <img src={pet.pictures} alt=""/>
+                        </div>
+                        <div className="CatBarListingName">{pet.name}</div>
+                    </div>
+                        )
+                        })}
 
                 </div>
                 

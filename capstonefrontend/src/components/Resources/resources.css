@@ -1,5 +1,41 @@
-.Resources{
+.Resource{
     display: grid;
     place-content: center;
     text-align: center;
+    background-color: rgb(53, 53, 53);
+    width: 26vw;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: whitesmoke;
+    grid-area: info;
+}
+.Resource:hover{
+    box-shadow: 0 0 40px  rgb(0, 0, 0);
+    background-color: rgb(48, 96, 107);
+}
+
+.Resources{
+    display: grid;
+    width: 30vw;
+    margin-left: 6vw;
+    grid-column: auto auot;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    'info map';
+    object-position: center;
+    
+}
+
+.map{
+    display: grid;
+    grid-area: map;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vh;
+}
+
+.detail{
+    height: 85vh;
+    overflow-y: auto;
 }

@@ -7,13 +7,18 @@ class CreateItemListing extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                name: null,
-                condition: null,
-                animal: null,
-                category: null,
-                description: null,
-                price: null,
-                user: null
+                name: "null",
+                condition: "null",
+                animal: "null",
+                category: "null",
+                description: "null",
+                price: "null",
+                user: "null",
+                location: "null",
+                state: "null",
+                pictures: "null",
+                category: 'null'
+
             }
         }
     handleTermChange = (event) =>{
@@ -34,7 +39,9 @@ class CreateItemListing extends Component {
                 description: this.state.description,
                 price: this.state.price,
                 pictures: this.state.pictures,
-                user: 1
+                location:this.state.location,
+                state: this.state.state,
+                user: 5
             };
         
         await axios.post(`http://127.0.0.1:8000/Items/`,newitem);
@@ -82,31 +89,43 @@ class CreateItemListing extends Component {
                     <div>
                             <label>Animal</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="animal" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="animal" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Category</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="categorgy" placeholder="potato" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="categorgy" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div>
                     <div>
                             <label>Price</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="price" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="price" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Description</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="description" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="description" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Pictures</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="file" name="pictures" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="type" name="pictures" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
+                    </div> 
+                    <div>
+                            <label>City</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="type" name="location" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
+                            </div>
+                    </div> 
+                    <div>
+                            <label>State</label>
+                            <div className="inputDiv">
+                            <input className="FormInput" type="type" name="state" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                    

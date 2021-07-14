@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './petsview.css';
 import {Link} from  'react-router-dom';
 //import axios from 'axios';
 
-class PetView extends Component {
+class ItemView extends Component {
     constructor(props) {
         super(props);
             this.state = {
@@ -15,22 +14,13 @@ class PetView extends Component {
     render() {
         return (        
             <div className="SearchViewContainer">
-                <h2 style={{margin:"0px"}}>PETS</h2>
+                <h2 style={{margin:"0px"}}>Items</h2>
                 
                 <h4 style={{margin:"0px"}}>Cats:</h4>
                 <div className="CatBar">
-                    <div className="CatBarListing">
-                        <div className="CatBarListingImage">
-                        
-                            <img className="CatBarListingImage" src="https://images.pexels.com/photos/674572/pexels-photo-674572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} onClick={(event)=>this.props.viewpet(1)}/>
-                            
-                        </div>
-                        <Link to="/listing" >
-                            <div className="CatBarListingName">Name</div>
-                        </Link>
-                    </div>
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="cat"}).map((pet)=>{
+                    
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="cat"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -47,8 +37,8 @@ class PetView extends Component {
                 <h4 style={{margin:"0px"}}>Dogs:</h4>
                 <div className="CatBar">
                     
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="dog"}).map((pet)=>{
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="dog"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -64,8 +54,8 @@ class PetView extends Component {
                 <h4 style={{margin:"0px"}}>Reptiles:</h4>
                 <div className="CatBar">
                     
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="reptile"}).map((pet)=>{
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="reptile"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -81,8 +71,8 @@ class PetView extends Component {
                 <h4 style={{margin:"0px"}}>Small Animals:</h4>
                 <div className="CatBar">
                     
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="small animal"}).map((pet)=>{
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="small animal"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -98,8 +88,8 @@ class PetView extends Component {
                 <h4 style={{margin:"0px"}}>Birds:</h4>
                 <div className="CatBar">
                     
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="bird"}).map((pet)=>{
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="bird"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -115,8 +105,8 @@ class PetView extends Component {
                 <h4 style={{margin:"0px"}}>Fish:</h4>
                 <div className="CatBar">
                     
-                    {this.props.state.allPets.filter(function (el) {
-                    return el.type=="fish"}).map((pet)=>{
+                    {this.props.state.allItems.filter(function (el) {
+                    return el.animal=="fish"}).map((pet)=>{
                         return(
                     <div className="CatBarListing">
                         <div className="CatBarListingImage">
@@ -130,9 +120,9 @@ class PetView extends Component {
 
                 </div>
                 <div>
-                <Link to="/AddPetListing" style={{color:"white"}}>
-                           <button>Create Pet Listing</button> 
-                </Link>
+                <Link to="/CreateItemListing" style={{color:"white"}}>
+                            <button >Create Listing</button>
+                    </Link>
                 </div>
 
             </div>
@@ -141,4 +131,4 @@ class PetView extends Component {
     }
 }
 
-export default PetView;
+export default ItemView;

@@ -25,9 +25,6 @@ function Navigation(props){
                     </Link>
                 </div>
 
-                <div>
-                    <h3>About Us</h3>
-                </div>
 
                 <div>
                     <Link to="/Lost">
