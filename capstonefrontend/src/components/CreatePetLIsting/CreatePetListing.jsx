@@ -96,43 +96,43 @@ class CreatePetListing extends Component {
                     <div>
                             <label>Type</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="type" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="type"  onChange={(event) => this.handleTermChange(event)}/>
                         </div>
                     </div> 
                     <div>
                             <label>Age</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="age" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="age"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Fixed</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="fixed" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="fixed"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div>
                     <div>
                             <label>Gender</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="gender" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="gender"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Breed</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="breed" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="breed"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Price</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="price" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="price"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Good with children?</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="children" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="children"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
@@ -144,7 +144,7 @@ class CreatePetListing extends Component {
                     <div>
                             <label>Description</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="description" placeholder="" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="description" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
@@ -156,13 +156,13 @@ class CreatePetListing extends Component {
                     <div>
                             <label>City</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="city" placeholder="URL" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="city"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>State</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="state" placeholder="URL" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="state"onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                    

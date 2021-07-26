@@ -48,7 +48,7 @@ class Home extends Component {
                 </div>
                 <div className="AnimalCircleWrapper">
                     
-                    <Link to="/Dog" style={{color:'black'}}>
+                    <Link to="/Cat" style={{color:'black'}}>
                     <div className="CircleSection">
                     <div className="CircleImage">
                             <img src="https://image.flaticon.com/icons/png/512/4867/4867184.png" alt=""/>
