@@ -73,9 +73,11 @@ background-image: linear-gradient(rgba(250, 128, 114, 0.399),rgba(39, 47, 75, 0.
     min-height: 200px;
     max-height: 200px;
     min-width: 200px;
+    max-width: 200px;
     background-color: rgb(206, 206, 206);
     place-content: center;
     overflow: hidden;
+    object-fit: scale-down;
 }
 
 .CatBarListingName,.DogBarListingName,.ItemBarListingName{

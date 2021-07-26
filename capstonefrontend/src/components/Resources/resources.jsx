@@ -54,5 +54,5 @@ class Resources extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ()
+  apiKey: 'AIzaSyApIi4wU9eRbKJHcLrMZ2v6Ju4IqXGAnfw'
 })(Resources)
