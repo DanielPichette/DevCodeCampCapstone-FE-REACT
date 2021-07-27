@@ -34,7 +34,6 @@ class cat extends Component {
                 </div>
 
                 <h2 style={{margin:"0px"}}>Items:</h2>
-                <div className="ItemResults">
                 <div className="CatBar">
                 {this.props.state.allItems.filter(function (el) {
                     return el.animal=="cat"}).map((pet)=>{
@@ -48,7 +47,6 @@ class cat extends Component {
                         )
                         })}
                     </div>
-                </div>
 
             </div>
              

@@ -35,14 +35,14 @@ class Login extends Component {
                     <div>
                             <label>User Name</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="username" placeholder="Username" onChange={(event) => this.props.handleChange(event)}/>
+                            <input className="FormInput" type="text" name="username"onChange={(event) => this.props.handleChange(event)}/>
                         </div>
                     </div> 
 
                     <div>
                             <label>Password</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="password" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                            <input className="FormInput" type="text" name="password"  onChange={(event) => this.handleChange(event)}/>
                         </div>
                     </div> 
                    

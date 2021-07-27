@@ -16,6 +16,9 @@ class SearchView extends Component {
         return (        
             <div className="SearchViewContainer">
                 <h3 style={{margin:"0px"}}>Results matching {this.props.state.searchinput}</h3>
+                <br/>
+                <br/>
+                
                 <h2 style={{margin:"0px"}}>Pets:</h2>
 
                 <div className="CatBar">
@@ -33,7 +36,7 @@ class SearchView extends Component {
                     
                     
                 </div>
-
+                <br/><br/>
                 <h2 style={{margin:"0px"}}>Items:</h2>
                 <div className="CatBar">
                 {this.props.state.itemsearchresults.map((pet)=>{

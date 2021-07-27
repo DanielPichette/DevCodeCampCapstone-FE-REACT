@@ -75,25 +75,25 @@ class LostPetForm extends Component {
                     <div>
                             <label>Date Last Seen</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="type" name="lastseen"  onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="type" name="lastSeen"  onChange={(event) => this.handleTermChange(event)}/>
                         </div>
                     </div> 
                     <div>
                             <label>Description</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="description" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="description" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>
                             <label>Phone</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="input" name="categorgy" placeholder="xxx-xxx-xxxx" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="input" name="phone" placeholder="xxx-xxx-xxxx" onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div>
                     <div>
                             <label>email</label>
                             <div className="inputDiv">
-                            <input className="FormInput" type="text" name="email" placeholder="FirstName" onChange={(event) => this.handleTermChange(event)}/>
+                            <input className="FormInput" type="text" name="email"  onChange={(event) => this.handleTermChange(event)}/>
                             </div>
                     </div> 
                     <div>

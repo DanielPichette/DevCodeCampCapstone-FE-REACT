@@ -17,7 +17,7 @@ class Resources extends Component {
           <div className="Resources">
             
             <div className="detail">
-              <h1>Local Vettinary Clinics:</h1>
+              <h1>Local Veterinary Clinics:</h1>
             {this.props.state.resources.map((pet)=>{
                         return(
                     <div className="Resource">

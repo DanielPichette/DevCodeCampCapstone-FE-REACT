@@ -82,62 +82,62 @@ class Register extends Component {
                      <div>
                              <label>FirstName</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="firstName" placeholder="FirstName" onChange={(event) => ()=>this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="firstName" onChange={(event) => ()=>this.handleChange(event)}/>
                          </div>
                      </div> 
  
                      <div>
                              <label>Last Name</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="lastName" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="lastName"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>UserName</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="username" placeholder="username" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="username" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Email</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="email" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="email" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>State</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="state" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="state"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>City</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="city" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="city"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Zip Code</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="zipcode" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="zipcode"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Phone Number</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="phone" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="phone"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Adress</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="address" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="address" onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <div>
                              <label>Password</label>
                              <div className="inputDiv">
-                             <input className="FormInput" type="text" name="password" placeholder="FirstName" onChange={(event) => this.handleChange(event)}/>
+                             <input className="FormInput" type="text" name="password"  onChange={(event) => this.handleChange(event)}/>
                          </div>
                      </div> 
                      <br/>
